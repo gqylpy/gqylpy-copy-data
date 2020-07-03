@@ -1,0 +1,30 @@
+log:
+  init:
+    datefmt: '%d/%b/%y:%H:%M:%S %z'
+    logfmt: '[%(asctime)s] [%(processName)s.%(threadName)s:%(levelname)s] %(message)s'
+  logger:
+    level: INFO
+    handler: default.log
+    logfmt: '[%(asctime)s] [%(filename)s line:%(lineno)d] [%(levelname)s] %(message)s'
+
+
+aliyun:
+  init:
+    queue_mode: true
+    action_cycle: 10m
+    timeout: 15s
+    method: post
+    protocol_type: https
+    accept_format: json
+#  send_mail:
+#    name: SingleSendMail
+#    ak: LTAI4FnwB7NR2ccdPetQAxBp
+#    secret: Xb3YSmlakPqIYkclnrWlQAmBQlXpi2
+#    region_id: cn-hangzhou
+#    domain: dm.aliyuncs.com
+#    version: '2015-11-23'
+#    AddressType: 1
+#    ReplyToAddress: true
+#    AccountName: trigger@mail.gqylpy.com
+#    ToAddress: 137326237@qq.com
+#    FromAlias: Anomaly Detect
