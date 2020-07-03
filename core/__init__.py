@@ -13,8 +13,8 @@ from tools import SecureShell
 from config import core as cnf
 
 ssh = SecureShell(
-    connect=decrypt('212.325.446.554.666.787.833.932.1043.1152'),
-    auth=decrypt('166.277.388.504.568.652.771.882.977.1076.1181.1280.1329.1380.1429.1481'),
+    connect=None,
+    auth=None,
     timeout=1000)
 
 media_dir = abspath(cnf.path.db, 'media')
